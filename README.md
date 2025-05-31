@@ -17,7 +17,7 @@ Welcome to the Java Programming Language course repository! This repository cont
 
 1. **Clone the repository:**
    ```powershell
-   git clone <your-repo-url>
+   git clone https://github.com/Abhishek-Atole/Java-Language.git
    cd Java-Language
    ```
 2. **Open in your favorite IDE:**
