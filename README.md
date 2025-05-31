@@ -1,46 +1,60 @@
 # Java Programming Language Course Repository
 
+[![Java CI](https://github.com/Abhishek-Atole/Java-Language/actions/workflows/java.yml/badge.svg)](https://github.com/Abhishek-Atole/Java-Language/actions/workflows/java.yml)
+
 Welcome to the Java Programming Language course repository! This repository contains Java code examples, projects, and study materials for learning and mastering Java.
 
 ---
 
 ## 📁 Repository Structure
 
-- `src/` — Java source code examples and exercises
-- `projects/` — Complete Java projects
-- `resources/` — Study materials, notes, and references
-- `docs/` — Documentation and guides
+- [`src/`](src/) — Java source code examples and exercises (currently empty, add your `.java` files here)
+- [`projects/`](projects/) — Complete Java projects
+- [`resources/`](resources/) — Study materials, notes, and references
+- [`docs/`](docs/) — Documentation and guides
+- [`.github/workflows/`](.github/workflows/) — GitHub Actions workflows for CI/CD
 
 ---
 
 ## 🚀 Getting Started
 
 1. **Clone the repository:**
-   ```powershell
+   ```sh
    git clone https://github.com/Abhishek-Atole/Java-Language.git
    cd Java-Language
    ```
 2. **Open in your favorite IDE:**
    - IntelliJ IDEA, Eclipse, or VS Code recommended.
 3. **Explore the folders:**
-   - `src/` for code examples
-   - `projects/` for full projects
-   - `resources/` for study materials
+   - [`src/`](src/) for code examples
+   - [`projects/`](projects/) for full projects
+   - [`resources/`](resources/) for study materials
 
 ---
 
-## 🛠️ Simple Workflow for Java Programs
+## 🛠️ Building and Testing
+
+This repository uses [GitHub Actions](.github/workflows/java.yml) for continuous integration. On every push or pull request to the `main` branch, the workflow:
+
+- Sets up JDK 21 (Temurin)
+- Compiles Java files in `src/main/java` (if present)
+- Placeholder for running Java tests (customize as needed)
+
+**Build Status:**  
+[![Java CI](https://github.com/Abhishek-Atole/Java-Language/actions/workflows/java.yml/badge.svg)](https://github.com/Abhishek-Atole/Java-Language/actions/workflows/java.yml)
+
+**To build and run Java files locally:**
 
 1. **Navigate to the source directory:**
-   ```powershell
+   ```sh
    cd src/main/java
    ```
 2. **Compile a Java file:**
-   ```powershell
+   ```sh
    javac YourFileName.java
    ```
 3. **Run the compiled program:**
-   ```powershell
+   ```sh
    java YourFileName
    ```
 
@@ -50,7 +64,7 @@ Welcome to the Java Programming Language course repository! This repository cont
 
 ## 🤝 Contributing
 
-We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions! Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 
 ---
 
