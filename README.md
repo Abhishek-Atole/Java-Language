@@ -47,7 +47,7 @@ This repository uses [GitHub Actions](.github/workflows/java.yml) for continuous
 
 1. **Navigate to the source directory:**
    ```sh
-   cd src/main/java
+   cd src
    ```
 2. **Compile a Java file:**
    ```sh
