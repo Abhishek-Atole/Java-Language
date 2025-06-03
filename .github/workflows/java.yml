@@ -24,8 +24,13 @@ jobs:
       run: |
         if (Test-Path src/) {
           cd src/
-          if (Get-ChildItem -Filter *.java) {
+          $javaFiles = Get-ChildItem -Filter *.java
+          if ($javaFiles) {
             javac *.java
+            if ($LASTEXITCODE -ne 0) {
+              Write-Error "Compilation failed"
+              exit 1
+            }
           } else {
             echo "No Java files to compile."
           }
@@ -34,6 +39,12 @@ jobs:
         }
       shell: pwsh
 
-    - name: Run Java tests (if any)
+    - name: Run Java main classes (if any)
       run: |
-        echo "Add your test commands here"
+        cd src
+        foreach ($file in Get-ChildItem -Filter *.class) {
+          $className = [System.IO.Path]::GetFileNameWithoutExtension($file.Name)
+          echo "Running $className"
+          java $className
+        }
+      shell: pwsh

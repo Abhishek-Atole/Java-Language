@@ -26,7 +26,7 @@ class ClassDemo {
         Marvellous mobj1 = new Marvellous();
         Marvellous mobj2 = new Marvellous(11, 21);
 
-        System.out.println(mobj2.i);
+        System.out.println(mobj1.i);
         System.out.println(mobj2.j);
 
         mobj2.Fun();
