@@ -22,15 +22,15 @@ jobs:
 
     - name: Compile Java code
       run: |
-        if (Test-Path src/main/java) {
-          cd src/main/java
+        if (Test-Path src/) {
+          cd src/
           if (Get-ChildItem -Filter *.java) {
             javac *.java
           } else {
             echo "No Java files to compile."
           }
         } else {
-          echo "src/main/java directory does not exist."
+          echo "src/ directory does not exist."
         }
       shell: pwsh
 
