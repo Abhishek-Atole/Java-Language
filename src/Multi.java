@@ -1,47 +1,47 @@
-class Base {
+class MainBase {
     public int A;
     public int B;
 
-    public Base() {
-        System.out.println("Inside the Base Class Constructor.");
+    public MainBase() {
+        System.out.println("Inside the MainMainBase Class Constructor.");
     }
 
     public void Fun() {
-        System.out.println("Inside the Base Class Fun Function");
+        System.out.println("Inside the MainBase Class Fun Function");
     }
 }
 
-class Derived extends Base {
+class Derived2 extends MainBase {
     public int C;
     public int D;
     public char E;
 
-    public Derived() {
-        System.out.println("Inside the Derived Class Constructor");
+    public Derived2() {
+        System.out.println("Inside the Derived2 Class Constructor");
     }
 
     public void Gun() {
-        System.out.println("Inside the Derived Class Gun Function.");
+        System.out.println("Inside the Derived2 Class Gun Function.");
     }
 }
 
-class DerivedX extends Derived {
+class DerivedX3 extends Derived2 {
     public int F;
     public int G;
     public char H;
 
-    public DerivedX() {
-        System.out.println("Inside the DerivedX Class Constructor");
+    public DerivedX3() {
+        System.out.println("Inside the DerivedX3 Class Constructor");
     }
 
     public void Run() {
-        System.out.println("Inside the Derived Class Run Function.");
+        System.out.println("Inside the Derived2 Class Run Function.");
     }
 }
 
 public class Multi {
     public static void main(String Args[]) {
-        DerivedX aobj = new DerivedX();
+        DerivedX3 aobj = new DerivedX3();
         aobj.Fun();
         aobj.Gun();
         aobj.Run();
@@ -50,10 +50,10 @@ public class Multi {
 
 /*
  * Output :-
- * Inside the Base Class Constructor.
- * Inside the Derived Class Constructor
- * Inside the DerivedX Class Constructor
- * Inside the Base Class Fun Function
- * Inside the Derived Class Gun Function.
- * Inside the Derived Class Run Function.
+ * Inside the MainBase Class Constructor.
+ * Inside the Derived2 Class Constructor
+ * Inside the DerivedX3 Class Constructor
+ * Inside the MainBase Class Fun Function
+ * Inside the Derived2 Class Gun Function.
+ * Inside the Derived2 Class Run Function.
  */
