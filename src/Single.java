@@ -1,9 +1,9 @@
-class Base {
+class Main {
     public int A;
     public int B;
 
-    public Base() {
-        System.out.println("Inside Base");
+    public Main() {
+        System.out.println("Inside Main");
     }
 
     public void Fun() {
@@ -11,7 +11,7 @@ class Base {
     }
 }
 
-class Deriverd extends Base {
+class Deriverd extends Main {
     public int C;
     public int D;
 
@@ -34,7 +34,7 @@ public class Single {
 
 /*
  * Output : -
- * Inside Base
+ * Inside Main
  * Inside Derived Class Constructor.
  * Inside Fun Function
  * Insie Derievrd Sun Function.
