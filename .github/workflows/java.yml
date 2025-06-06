@@ -24,16 +24,7 @@ jobs:
       run: |
         if (Test-Path src/) {
           cd src/
-          $javaFiles = Get-ChildItem -Filter *.java
-          if ($javaFiles) {
-            javac *.java
-            if ($LASTEXITCODE -ne 0) {
-              Write-Error "Compilation failed"
-              exit 1
-            }
-          } else {
-            echo "No Java files to compile."
-          }
+          javac *.java
         } else {
           echo "src/ directory does not exist."
         }
