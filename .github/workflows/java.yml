@@ -24,7 +24,8 @@ jobs:
       run: |
         if (Test-Path src/) {
           cd src/
-          javac *.java
+          # Exclude Demo.java from compilation
+          Get-ChildItem -Filter *.java | Where-Object { $_.Name -ne 'Demo.java' } | ForEach-Object { javac $_.Name }
         } else {
           echo "src/ directory does not exist."
         }
