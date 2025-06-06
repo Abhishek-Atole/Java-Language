@@ -10,7 +10,7 @@ abstract class Demo {
     }
 
     abstract void fun(); 
-    //virtual void fun() = 0        /// Same as C++ pure virtual function
+    //virtual void fun() = 0        // Same as C++ pure virtual function
 
     void gun() {
         System.out.println("Inside gun function");
