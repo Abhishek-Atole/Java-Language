@@ -1,4 +1,4 @@
-interface Mathematics {
+interface Mathematics {                     //Interface is contains the abstract
     public int Addition(int A, int B);
 
     public int Substraction(int A, int B);
