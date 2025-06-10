@@ -13,6 +13,10 @@ public class ExceptionDemo1X {
             iAns = iNo1 / iNo2;
         } catch (ArithmeticException obj) {
             System.out.println("Inside catch Section " + obj);
+        } catch (ArrayIndexOutOfBoundsException obj) {
+            System.out.println("Inside out of Bounds Exception " + obj);
+        } catch (Exception obj) {
+            System.out.println("Inside Generic Catch block " + obj);
         } finally {
             System.out.println("Inside finally Section");
 
