@@ -13,7 +13,7 @@ class UserDefined {
         int iAge = sobj.nextInt();
         try {
             if (iAge < 18) {
-                AgeInvalid aobj = new AgeInvalid("Your Age is Below 18");
+                AgeInvalid aobj = new AgeInvalid("Your Age is Below 18.");
                 throw aobj;
             } else {
                 System.out.println("Login Succesful....");
